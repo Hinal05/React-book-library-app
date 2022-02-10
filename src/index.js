@@ -9,7 +9,9 @@ const App =  () => {
   return (
     <section>
       <Header/>
-      <BookList />
+      <div className='content-wrap'>
+        <BookList />
+      </div>
       <Footer/>
     </section>
   )
