@@ -1,0 +1,33 @@
+Kindle, google book
+https://books.google.com/books?uid=117522004192189783614&as_coll=1018&source=gbs_lp_bookshelf_list
+
+Task1
+Book library Project (Function base component) (props)
+1. Header, Footer
+2. Listing of books (Book name, image, date, description)
+bg color for book item using props
+---------------------------------------
+
+Task2
+1. Book Listing: Title-Book library
+2. Book Listing: State: sorting, search field
+3. Book item: button: Read Book reading
+4. Create new section or page : current reading book (Remove on list), Add button on finish reading
+5. New section: finish book
+6. Navigation: current reading book list
+- Flag generate:  book is already read or not?
+- Lifecycle method
+7. pagination
+8. Which is the best way to use in React: Inline css, External css (Emotion library)
+-----------------------------------------
+
+Task 3
+9. AAA functionality
+10. Emotion css: https://emotion.sh/docs/introduction
+11. Theme UI integration: https://theme-ui.com, Tailwin
+12. How to integrate scss in React
+13. Add note for book
+14. Rating
+15. Similar books list
+
+------------------------------------------

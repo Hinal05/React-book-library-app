@@ -3,49 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: "Montserrat", sans-serif;
 }
+
 body {
-    background: #eee;
+    background: rgb(238 238 238 / 32%);
 }
 
-
-header {
-    background-color: #f5ba13;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-.header-wrap {
-    padding: 10px 0;
-}
-
-header h1 {
-    color: #fff;
-    font-family: "McLaren", cursive;
-    font-weight: 200;
-    margin: 0;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-}
-
-header ul li {
-    margin: 0 10px;
-}
-header a, .nav-link {
-    text-decoration: none;
-    color: #fff;
-}
 
 footer {
     border-top: #ccc solid 2px;
     background-color: #fff;
     width: 100%;
 }
+
 .footer-wrap {
     display: flex;
     flex-direction: column;
@@ -53,6 +26,7 @@ footer {
     align-items: center;
     padding: 30px 0;
 }
+
 footer a {
     color: #000;
     text-decoration: none;
@@ -67,25 +41,29 @@ footer a {
     padding: 30px 0;
 }
 
-.book-detail{
+.book-detail {
     font-weight: 400;
-    border: 1px solid #00000026;
+    border: 1px solid rgb(223 230 233 / 44%);
     padding: 20px;
     background: #fff;
     height: 100%;
 }
+
 .book-img {
     text-align: center;
 }
+
 .book-detail h2 {
     font-size: 20px;
     margin: 10px 0 0 0;
 }
+
 .book-detail .date {
     font-size: 13px;
     opacity: 0.6;
     margin: 5px 0;
 }
+
 .book-detail p {
     font-size: 13px;
 }
@@ -94,4 +72,67 @@ footer a {
     footer {
         position: static;
     }
+}
+
+/* Form */
+
+.login-wrapper {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-weight: 300;
+    background: url(https://www.entertales.com/wp-content/uploads/Nbi7bYI-1.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper form {
+    padding: 20px 0;
+    position: relative;
+}
+
+.login-wrapper form input {
+    border: 1px solid rgba(252, 252, 252, 0.6);
+    background-color: rgba(252, 252, 252, 0.4);
+    width: 250px;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+
+.login-wrapper form button {
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: #50a3a2;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.book-detail-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    border: 1px solid rgb(223 230 233 / 44%);
+    padding: 20px;
+    background: #fff;
+}
+
+#testundefined {
+    display: none;
 }

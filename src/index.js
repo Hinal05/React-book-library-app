@@ -1,21 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './components/header/header'; // Import header component
-import Footer from './components/footer/footer'; // Import footer component
-import BookList from './components/book_list/book_list'; // Import Book list component
-
-const App =  () => {
-  return (
-    <section>
-      <Header/>
-      <div className='content-wrap'>
-        <BookList />
-      </div>
-      <Footer/>
-    </section>
-  )
-}
+import App from "./components/App";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <App/>,

@@ -1,34 +1,25 @@
 import React from "react";
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import styles from './header.module.css';
 
 const Header = () => {
     return (
-        <header>
-            <nav className="container-fluid">
-                <div className="header-wrap">
-                    <div className="navbar navbar-expand-lg">
-                        <a className="navbar-brand" href="/">
-                            <img src="../../images/logo.png" alt="" /> BookLibrary
-                        </a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="ti-menu"></span>
-                        </button>
-                        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                            <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">Home</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">About</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <Navbar expand="lg" fixed="top" bg="dark" variant="dark" >
+            <Container fluid>
+                <Navbar.Brand href="#">ReactProjects</Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll" className="justify-content-end">
+                    <Nav
+                        className="my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Nav.Link href="#action1">BookLibrary</Nav.Link>
+                        <Nav.Link href="#action2">Link</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 export default Header;

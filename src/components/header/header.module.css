@@ -1,0 +1,33 @@
+/* header {
+    background-color: #0982ff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_wrap {
+    padding: 5px 0;
+}
+
+header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header a, .nav-link {
+    text-decoration: none;
+    color: #fff;
+} */
