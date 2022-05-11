@@ -19,6 +19,8 @@ Task2
 - Lifecycle method
 7. pagination
 8. Which is the best way to use in React: Inline css, External css (Emotion library)
+9. Set proper navigation with different projects.
+10. Create component wise styling.
 -----------------------------------------
 
 Task 3

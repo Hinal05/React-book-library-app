@@ -1,10 +1,10 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import styles from './header.module.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import styles from './header.scss';
 
 const Header = () => {
     return (
-        <Navbar expand="lg" fixed="top" bg="dark" variant="dark" >
+        <Navbar expand="lg" fixed="top">
             <Container fluid>
                 <Navbar.Brand href="#">ReactProjects</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -15,7 +15,8 @@ const Header = () => {
                         navbarScroll
                     >
                         <Nav.Link href="#action1">BookLibrary</Nav.Link>
-                        <Nav.Link href="#action2">Link</Nav.Link>
+                        <Nav.Link href="#action2">Signup</Nav.Link>
+                        <Nav.Link href="#action3">Notes</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

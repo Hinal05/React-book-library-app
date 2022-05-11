@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
+import { Col } from 'react-bootstrap';
 import ShortShow from './short_content';
+import bookCss from './book.scss';
 
 function BookItem(props) {  // Create component for Book item
 
@@ -13,7 +15,7 @@ function BookItem(props) {  // Create component for Book item
     }
 
     return (
-        <div className='col-sm-3 mb-3'>
+        <Col sm="3">
             <div className='book-detail'>
                 <div className='book-img'>
                     <img src={props.img + "?grayscale"} alt='book1' />
@@ -24,7 +26,7 @@ function BookItem(props) {  // Create component for Book item
                 <ShortShow shortContent={props.description} />
                 <a href='#' onClick={ReadMore}>Start Read</a>
             </div>
-        </div>
+        </Col>
     )
 }
 
