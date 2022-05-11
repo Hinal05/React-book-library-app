@@ -3,27 +3,26 @@ import { Col } from 'react-bootstrap';
 import ShortShow from './short_content';
 import bookCss from './book.scss';
 
-function BookItem(props) {  // Create component for Book item
+function BookItem(listItem) {  // Create component for Book item
 
-    const [book, setBook] = useState(props);
+    const [book, setBook] = useState(listItem);
 
     function ReadMore(id) {
-        const bookId = book.id;
-        setBook(book);
-        props.onAdd(book);
+        const bookId = book.listItem.id;
+        setBook(book.listItem);
+        listItem.onAdd(book.listItem);
         id.preventDefault();
     }
 
     return (
-        <Col sm="3">
+        <Col sm="3" className='mb-4'>
             <div className='book-detail'>
                 <div className='book-img'>
-                    <img src={props.img + "?grayscale"} alt='book1' />
+                    <img src={listItem.listItem.imgURL + "?grayscale"} alt='book1' />
                 </div>
-                <h2>{props.name}</h2>
-                <div className='date'>{props.date}</div>
-                {/* <p>{props.description}</p> */}
-                <ShortShow shortContent={props.description} />
+                <h2>{listItem.listItem.name}</h2>
+                <div className='date'>{listItem.listItem.date}</div>
+                <ShortShow shortContent={listItem.listItem.description} />
                 <a href='#' onClick={ReadMore}>Start Read</a>
             </div>
         </Col>

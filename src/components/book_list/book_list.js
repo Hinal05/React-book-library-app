@@ -56,19 +56,15 @@ const BookList = () => {  // Create component for Book listing
                 {/* {Books.map(createBook)} */}
                 {Books.map((item) => (
                     <BookItem
-                        id={item.id}
                         key={item.id}
-                        name={item.name}
-                        img={item.imgURL}
-                        description={item.description}
-                        date={item.date}
+                        listItem={item}
                         onAdd={viewData}
                     />
                 ))}
             </Row>
             <div className="book-detail-wrapper" id={'test'+ itemValue.id}>
                 <div className="book-img">
-                    <img src={itemValue.img} alt="book1" />
+                    <img src={itemValue.imgURL} alt="book1" />
                 </div>
                 <h2>{itemValue.name}</h2>
                 <div className="date">{itemValue.date}</div>
